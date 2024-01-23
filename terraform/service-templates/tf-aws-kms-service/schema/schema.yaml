@@ -1,0 +1,12 @@
+schema:
+  format:
+    openapi: "3.0.0"
+  service_input_type: "LoadBalancedFargateServiceInput"
+  types:
+        image:
+          type: string
+          title: "Container Image"
+          description: "The container image to deploy"
+          default: "public.ecr.aws/aws-containers/proton-demo-image:1e5ca1d"
+          minLength: 1
+          maxLength: 200
